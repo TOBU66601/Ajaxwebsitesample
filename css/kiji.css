@@ -1,0 +1,147 @@
+﻿
+/*PC表示の基本設定*/
+
+section {
+    width: 65%;
+    background: white;
+    float: left;
+    text-align: inherit;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px 3px;
+    margin: 0 0 30px 25px;
+}
+
+#title {
+    width: 90%;
+    border: 3px solid red;
+    margin: 3%;
+    padding: 5px;
+    float: left;
+}
+
+    #title h2 {
+        margin: 5%;
+    }
+
+#date {
+    float: left;
+    border: 2px solid blue;
+    margin-left: 10px;
+}
+
+    #date h4 {
+        margin-top: -2px;
+        text-align: center;
+    }
+
+    #date p {
+        margin-top: -5px;
+        margin-bottom: -2px;
+        font-size: 24pt;
+    }
+
+#title h2 {
+}
+
+
+#blognav {
+    width: 30%;
+    background: white;
+    float: right;
+    margin: 0 25px 0 0;
+    border-radius: 15px;
+    position: relative;
+}
+
+    #blognav p {
+        margin-bottom: 20px;
+        margin-left: 8%;
+    }
+
+footer {
+    clear: both;
+}
+
+#kiji {
+    clear: left;
+}
+
+#underparts {
+    clear: both;
+    text-align: center;
+}
+
+    #underparts ul {
+        list-style: none;
+    }
+
+    #underparts li {
+        display: inline;
+        margin: 40px;
+        border-radius: 10px;
+        background: white;
+        border: none;
+        font-size: 24px;
+        padding: 7px;
+    }
+
+        #underparts li a {
+            text-decoration: none;
+        }
+        
+        #underparts li a::after{ /*アフターリンクはどこ？*/
+            color:blue;
+        }
+
+/*記事の選択に関しての書式設定を入力*/
+
+/*スマートフォンの設定*/
+
+@media screen and (max-width:480px) {
+    article{
+        display:inline-flex;
+        flex-direction:column;
+    }
+
+    /*記事を最初に*/
+    section {
+        width: 90%;
+        margin: 5%;
+        box-shadow: none;
+           order:1;
+
+    }
+
+    /*要編集*/
+    #blognav {
+
+        width:90%;
+        margin:5%;
+        order:2;
+        
+    }
+
+    #title h2 {
+        padding: -40px; /*記事によっては別途調整*/
+    }
+
+    #underparts {
+        display: block;
+        width: 50%;
+        margin: auto;
+        text-align: center;
+    }
+
+        #underparts ul {
+            padding: 0;
+        }
+
+        #underparts li {
+            display: flex;
+            margin: 0;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            padding: 5px;
+            font-size: 18px;
+        }
+}

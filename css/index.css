@@ -1,0 +1,36 @@
+﻿section{
+    width:70%;
+    margin:auto;
+    text-align:center;
+}
+
+body{
+    margin:0;
+}
+#page-top {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    font-size: 40px;
+}
+
+    #page-top a {
+        background: #666;
+        text-decoration: none;
+        color: #fff;
+        width: 100px;
+        padding: 30px 0;
+        text-align: center;
+        display: block;
+        border-radius: 5px;
+    }
+
+        #page-top a:hover {
+            text-decoration: none;
+            background: #999;
+        }
+@media screen and (max-width:480px){
+    section{
+        width:85%;
+    }
+}
